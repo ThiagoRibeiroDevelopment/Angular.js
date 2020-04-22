@@ -1,0 +1,18 @@
+<html ng-app= "App">
+    <head>
+        <title>Hello Word</title>
+        <script = src="angular.js"></script>
+        <script> 
+        angular.module("App", []); // cria o modulo atraves da injeção do []
+        angular.module("App").controller("AppControler", function($scope){
+            $scope.menssage = "Hello Word!";
+        });        
+        </script>
+    </head>
+    <body> 
+        <div ng-controller="AppControler">
+            {{menssage}}
+        </div>
+    </body>
+
+</html>
